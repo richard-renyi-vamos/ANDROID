@@ -1,0 +1,7 @@
+super.onCreate(savedInstanceState);
+setContentView(R.layout.activity_main);
+
+TextView textView = findViewById(R.id.textView);
+textView.setText("Hello, World!");
+
+# CREATED WITH THE HELP OF OPEN AI CHAT-GPT: https://chat.openai.com/chat
