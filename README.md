@@ -1,6 +1,5 @@
 # ANDROID calculator - chat GPT AI conversation (prompt + reply)
 
-Richard Renyi-Vamos
 create a calculator app in android
 To create a calculator app in Android, follow these steps:
 
