@@ -1,0 +1,3 @@
+TextView timeTextView = findViewById(R.id.timeTextView);
+LocalTime currentTime = LocalTime.now();
+timeTextView.setText(currentTime.toString());
