@@ -1,0 +1,26 @@
+private void fetchNews() {
+    String url = "https://newsapi.org/v2/top-headlines?sources=google-news&apiKey=YOUR_API_KEY";
+    
+    // Make a network request using Volley library
+    JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null,
+        response -> {
+            // Handle the JSON response
+            JSONArray articles = response.getJSONArray("articles");
+            for (int i = 0; i < 10; i++) {
+                JSONObject article = articles.getJSONObject(i);
+                String title = article.getString("title");
+                String description = article.getString("description");
+                String urlToImage = article.getString("urlToImage");
+                String url = article.getString("url");
+                
+                // Add the news article to a list or display it in the UI
+            }
+        },
+        error -> {
+            // Handle the error
+        }
+    );
+    
+    // Add the request to the Volley request queue
+    Volley.newRequestQueue(this).add(request);
+}
